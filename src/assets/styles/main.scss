@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@import '_variables.scss';
+@import '_normalize.scss';
+
+@import 'blocks/_sidebar.scss';
+
+@import 'home/main-home.scss';
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after, *:active, *:focus, *:hover {
+	outline: none;
+	outline-offset: 0;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+	font-weight: $font-normal;
+	color: $text-color;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $text-color;
+}
+
+figure {
+	margin: 0;
+}
+
+button {
+	border: none;
+	background: transparent;
+	outline: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 48px auto;
+	padding: 0 20px;
+}
+
+.col-30 {
+	width: 100%;
+	max-width: 220px;
+}
+
+.col-70 {
+	width: 100%;
+	max-width: 940px;
+}
+
+.content {
+	background: $white;
+	box-shadow: -1px 1px 16px -4px rgba(0, 0, 0, 0.2);
+}
